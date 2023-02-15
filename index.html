@@ -1,11 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-  </head>
-  <body>
-    <p>Hello World!</p>
-  </body>
+    <title>Treloo</title>
+</head>
+<body>
+<div class="title-page">
+    <!-- Header -->
+    <header class="title-page__header">
+        <div class="logo">
+            <img src="images/Treloo.png" alt="logo">
+        </div>
+
+        <nav class="title-page__menu">
+            <a href="#">Review</a>
+            <a href="#">Tips</a>
+            <a href="#">Alerts</a>
+            <a href="#">Blog</a>
+            <a href="#">Blog2</a>
+        </nav>
+    </header>
+
+    <div class="title-page__main-information">
+        <h1>Discover Your Life, Travel Where You Want</h1>
+        <p>Would you explore nature paradise in the world, <br>let’s find the best destination in world with us.</p>
+    </div>
+
+    <!-- Searching for a flight block -->
+    <div class="search-block">
+        <div class="top-buttons">
+            <button class="search-block__buttons__item__button"><img src="images/Airplane_Mode_On.png" alt="logo">Flight
+            </button>
+            <button class="search-block__buttons__item__button"><img src="images/Hotel_Star.png" alt="logo">Hotel
+            </button>
+        </div>
+
+        <form class="search-block__search">
+            <div class="search-block__search__search-locations">
+                <div>
+                    <label for="city-from">Leaving From</label>
+                    <select name="city-from" id="city-from">
+                        <option value="Dubai">Dubai</option>
+                    </select>
+                </div>
+
+                <div>
+                    <img src="images/Airplane_Mode_On.png" alt="plane">
+                </div>
+
+                <div>
+                    <label for="city-to">Going To</label>
+                    <select name="city-to" id="city-to">
+                        <option value="New-York">New-York</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-block__search__search-dates">
+                <div>
+                    <label for="date-leave">Leave</label>
+                    <input type="date" name="date-leave" id="date-leave">
+                </div>
+
+                <div>
+                    <img src="images/Planner.png" alt="calendar">
+                </div>
+
+                <div>
+                    <label for="date-return">Return</label>
+                    <input type="date" name="date-return" id="date-return">
+                </div>
+            </div>
+
+            <button class="search-button">
+                <img src="images/search_icon.png" alt="search">
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="special-upcomming-offer-page">
+    <h2>Special Upcomming Offer</h2>
+
+    <div class="special-upcomming-offer-page__buttons">
+        <button>Team</button>
+        <button>Couple</button>
+        <button>Family</button>
+    </div>
+
+    <div class="special-upcomming-offer-page__offers">
+        <!-- Offer 1 -->
+        <div class="special-upcomming-offer-page__offers__offer">
+            <div>
+                <img src="images/offers/unsplash_7uXn7nudorc.png" alt="Loga Sea">
+                <p>14 FEB 2022</p>
+            </div>
+            <div>
+                <div>
+                    <p>Relax</p>
+                    <p>3 Days, 3 Nights</p>
+                </div>
+                <h3>Loga Sea</h3>
+                <div>
+                    <p>700$/Person</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="special-upcomming-offer-page__offers__offer">
+            <div>
+                <img src="images/offers/unsplash_HUk2W9fa-Jw.png" alt="Ansgar Scheffold">
+                <p>18 JUN 2022</p>
+            </div>
+            <div>
+                <div>
+                    <p>Adventure</p>
+                    <p>4 Days, 3 Nights</p>
+                </div>
+                <h3>Ansgar Scheffold</h3>
+                <div>
+                    <p>400$/Person</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="special-upcomming-offer-page__offers__offer">
+            <div>
+                <img src="images/offers/unsplash_Yui5vfKHuzs.png" alt="Lona X">
+                <p>22 DEC 2022</p>
+            </div>
+            <div>
+                <div>
+                    <p>Relax</p>
+                    <p>7 Days, 6 Nights</p>
+                </div>
+                <h3>Lona X</h3>
+                <div>
+                    <p>340$/Person</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-us-advertisement">
+    <div class="contact-us-advertisement__block-with-image">
+        <img src="images/vertical_banner.png" alt="contact-us-image">
+        <div class="contact-us-advertisement__block-with-image__image-advertisement">
+            <h4>300+</h4>
+            <p>DESTINATIONS</p>
+        </div>
+        <div class="contact-us-advertisement__block-with-image__image-advertisement">
+            <h4>5000+</h4>
+            <p>TOURISTS</p>
+        </div>
+        <div class="contact-us-advertisement__block-with-image__image-advertisement">
+            <h4>150+</h4>
+            <p>HOTELS</p>
+        </div>
+    </div>
+    <div class="contact-us-advertisement__block-with-text">
+        <h2>Travel Any Corner of The World With Us</h2>
+        <p>Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you
+            explore nature paradise in the world, let’s find the best destination in world with us. Would you explore
+            nature paradise in the world, let’s find the best destination in world with us.
+            Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+        <button>Contact Us</button>
+    </div>
+</div>
+
+<div class="recommended-destination">
+    <h2>Recommended Destination</h2>
+
+    <div class="recommended-destination__buttons">
+        <button>Popular</button>
+        <button>Adventure</button>
+        <button>Beath</button>
+    </div>
+
+    <div class="recommended-destination__destination-block">
+        <div class="recommended-destination__destination-block__destination">
+            <img src="images/location_image_1.png" alt="recommended-destination-image">
+            <p><img src="images/Star.png" alt="star">3.4</p>
+            <div>
+                <h3>Kina Mountain</h3>
+                <p><img src="images/Location.png" alt="location">Cambodia</p>
+            </div>
+        </div>
+
+        <div class="recommended-destination__destination-block__destination">
+            <img src="images/location_image_1.png" alt="recommended-destination-image">
+            <p><img src="images/Star.png" alt="star">3.4</p>
+            <div>
+                <h3>Kina Mountain</h3>
+                <p><img src="images/Location.png" alt="location">Cambodia</p>
+            </div>
+        </div>
+
+        <div class="recommended-destination__destination-block__destination">
+            <img src="images/location_image_1.png" alt="recommended-destination-image">
+            <p><img src="images/Star.png" alt="star">3.4</p>
+            <div>
+                <h3>Kina Mountain</h3>
+                <p><img src="images/Location.png" alt="location">Cambodia</p>
+            </div>
+        </div>
+
+        <div class="recommended-destination__destination-block__destination">
+            <img src="images/location_image_1.png" alt="recommended-destination-image">
+            <p><img src="images/Star.png" alt="star">3.4</p>
+            <div>
+                <h3>Kina Mountain</h3>
+                <p><img src="images/Location.png" alt="location">Cambodia</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reviews">
+    <div class="reviews__reviews-box">
+        <div class="reviews__reviews-box__review">
+            <img src="images/quote.png" alt="quote">
+            <p>Our trip to Morocco was truly a once in a lifetime experience and we are so grateful to everyone that
+                made it happen seamlessly. Our travel planner, Jaouad, was incredible.</p>
+            <a>-Vand D</a>
+            <p>Happy Treloo</p>
+            <div>
+                <p><img src="images/Star.png" alt="star">3.4</p>
+                <img src="images/user_logo.png" alt="user-logo">
+            </div>
+        </div>
+        <div class="reviews__reviews-box__review">
+            <img src="images/quote.png" alt="quote">
+            <p>Our trip to Morocco was truly a once in a lifetime experience and we are so grateful to everyone that
+                made it happen seamlessly. Our travel planner, Jaouad, was incredible.</p>
+            <a>-Vand D</a>
+            <p>Happy Treloo</p>
+            <div>
+                <p><img src="images/Star.png" alt="star">3.4</p>
+                <img src="images/user_logo.png" alt="user-logo">
+            </div>
+        </div>
+
+    </div>
+    <div class="reviews__scroll">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="38" height="38" rx="14" stroke="#3E86F5" stroke-opacity="0.5" stroke-width="2"/>
+            <path d="M25.1429 10.2856L14.8571 20.5714L25.1429 30.8571" stroke="#3E86F5" stroke-width="3"/>
+        </svg>
+
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="-1" y="1" width="38" height="38" rx="14" transform="matrix(-1 0 0 1 38 0)" stroke="#3E86F5"
+                  stroke-opacity="0.5" stroke-width="2"/>
+            <path d="M14.8571 10.2856L25.1429 20.5714L14.8571 30.8571" stroke="#3E86F5" stroke-width="3"/>
+        </svg>
+    </div>
+</div>
+
+<div class="register-discount-banner">
+    <img src="images/banner.png" alt="banner">
+    <h1>Don’t Miss The 50% Discount if You register Today</h1>
+    <button>Register Today</button>
+</div>
+
+<footer class="footer">
+    <div class="footer__copyright">
+        <p>© 2022 Treloo LLC - All right reserved.</p>
+    </div>
+
+    <nav class="footer__menu">
+        <a href="#">Review</a>
+        <a href="#">Tips</a>
+        <a href="#">Alerts</a>
+        <a href="#">Blog</a>
+    </nav>
+</footer>
+
+</body>
 </html>
