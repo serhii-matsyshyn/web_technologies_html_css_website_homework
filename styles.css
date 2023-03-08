@@ -156,6 +156,11 @@ html {
 .search-block__search__search-locations__icon {
     flex-basis: 30px;
     text-align: center;
+
+    /* TODO: dashed line*/
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 3px;
 }
 
 .search-block__search__search-dates {
@@ -192,6 +197,11 @@ html {
 .search-block__search__search-dates__icon {
     flex-basis: 30px;
     text-align: center;
+
+    /* TODO: dashed line*/
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 3px;
 }
 
 .search-button {
@@ -218,6 +228,12 @@ html {
     flex-direction: column;
 }
 
+.special-upcomming-offer h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .special-upcomming-offer__buttons {
     display: flex;
     justify-content: center;
@@ -228,14 +244,26 @@ html {
     padding: 10px;
 }
 
-.special-upcomming-offer__buttons button {
+.special-upcomming-offer__buttons__selected {
     flex: 1;
     padding: 10px;
-    background-color: #0056b3;
-    color: #fff;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+    background: #3E86F5;
+    border-radius: 10px;
+}
+
+.special-upcomming-offer__buttons__ordinary {
+    flex: 1;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.5);
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     margin: 0 5px;
 }
@@ -243,9 +271,9 @@ html {
 .special-upcomming-offer__offers {
     display: flex;
     flex-direction: row;
-
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    flex: 1 1 0;
 }
 
 .special-upcomming-offer__offers__offer {
@@ -255,6 +283,11 @@ html {
     padding: 20px;
     border-radius: 50px;
     margin: 10px;
+
+    flex: 1 1 0;
+
+    max-width: 340px;
+    min-width: 260px;
 }
 
 .offer__banner {
@@ -268,6 +301,8 @@ html {
 .offer__banner img {
     width: 100%;
     object-fit: cover;
+    border-radius: 50px;
+    margin: 5px;
 }
 
 .offer__banner time {
@@ -305,8 +340,36 @@ html {
 
 .offer__description__top {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: start;
     width: 100%;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.offer__description__top span {
+    margin: 5px;
+    font-size: 14px;
+    padding: 3px;
+}
+
+
+.span-relax {
+    background: #FCDDEC;
+    border-radius: 100px;
+    color: #F178B6;
+    font-size: 14px;
+    padding: 3px;
+    margin: 5px;
+}
+
+.span-adventure {
+    background: #F1F1FD;
+    border-radius: 100px;
+    color: #7879F1;
+    font-size: 14px;
+    padding: 3px;
+    margin: 5px;
 }
 
 .offer__description__top span {
@@ -316,6 +379,7 @@ html {
 .offer__description__central {
     font-size: 24px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .offer__description__bottom {
@@ -325,17 +389,25 @@ html {
 }
 
 .offer__description__bottom span {
-    font-size: 16px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.offer__description__bottom span strong {
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
 }
 
 .offer__description__bottom button {
     padding: 10px 20px;
-    background-color: #0056b3;
-    color: #fff;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+
+    background: #F2F6FF;
+    border-radius: 10px;
+    color: #3E86F5;
 }
 
 /* contact-us-advertisement */
@@ -383,25 +455,28 @@ html {
 }
 
 .contact-us-advertisement__block-with-text h2 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 48px;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
 .contact-us-advertisement__block-with-text p {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 20px;
     margin-bottom: 30px;
+    line-height: 200%;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .contact-us-advertisement__block-with-text button {
     padding: 12px 30px;
-    background-color: #0056b3;
-    color: #fff;
+    color: #FFFFFF;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
+    line-height: 30px;
+
+    background: #3E86F5;
+    border-radius: 10px;
 }
 
 /* recommended-destination */
@@ -412,24 +487,41 @@ html {
     flex-direction: column;
 }
 
+.recommended-destination h2 {
+    font-weight: 600;
+    font-size: 48px;
+}
+
 .recommended-destination__buttons {
     display: flex;
     justify-content: center;
 
-    background: #FFFFFF;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 10px;
 }
 
-.recommended-destination__buttons button {
+.recommended-destination__buttons__ordinary {
     flex: 1;
     padding: 10px;
-    background-color: #0056b3;
-    color: #fff;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.recommended-destination__buttons__selected {
+    flex: 1;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #3E86F5;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
     cursor: pointer;
     margin: 0 5px;
 }
@@ -439,29 +531,35 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
+    margin: 10px;
 }
 
 .recommended-destination__destination-block__destination {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
     flex: 1 1 0;
     background-color: #f8f8f8;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 25px;
+
+    min-width: 200px;
+    max-width: 300px
 }
 
 .recommended-destination__destination-block__destination img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 25px;
 }
 
-.recommended-destination__destination-block__destination h4 {
+.recommended-destination__destination-block__destination h3 {
     font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-weight: 600;
+    margin: 5px 0;
 }
 
 .recommended-destination__destination-block__destination button {
@@ -491,7 +589,7 @@ html {
     background: #FFFFFF;
     border-radius: 25px;
 
-    padding: 5px;
+    padding: 3px;
 }
 
 .destination-description__location {
@@ -508,6 +606,7 @@ html {
 
 .destination-description__location span {
     font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 /* Reviews */
@@ -532,7 +631,7 @@ html {
 
 .reviews__reviews-box__review {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     padding: 30px;
     margin: 20px;
@@ -540,26 +639,42 @@ html {
     min-width: 250px;
     text-align: center;
 
+    position: relative;
+
     flex: 1 1 0;
 }
 
 
 .reviews__reviews-box__review p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
 .reviews__reviews-box__review a {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     display: block;
     margin-top: 20px;
+
+    color: #3E86F5;
 }
 
 .reviews__reviews-box__review span {
-    font-size: 14px;
-    font-style: italic;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+    position: absolute;
+    /* center */
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    background-size: contain;
+    /*opacity: 0.1;*/
 }
 
 /* TODO: User rating should be in right upper part of image*/
