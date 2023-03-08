@@ -50,16 +50,19 @@
                         <label for="city-from">Leaving From</label>
                         <select name="city-from" id="city-from">
                             <option value="Dubai">Dubai</option>
+                            <option value="London">London</option>
                         </select>
                     </div>
 
-                    <img class="search-block__search__search-locations__icon" src="images/Airplane_Mode_On.png"
-                         alt="plane">
+                    <div class="search-block__search__search-locations__icon">
+                        <img src="images/Airplane_Mode_On.png" alt="plane">
+                    </div>
 
                     <div class="search-block__search__search-locations__to">
                         <label for="city-to">Going To</label>
                         <select name="city-to" id="city-to">
                             <option value="New-York">New-York</option>
+                            <option value="Paris">Paris</option>
                         </select>
                     </div>
                 </div>
@@ -67,10 +70,12 @@
                 <div class="search-block__search__search-dates">
                     <div class="search-block__search__search-dates__leave">
                         <label for="date-leave">Leave <img src="images/Airplane_Mode_On.png" alt="plane"></label>
-                        <input type="date" name="date-leave" id="date-leave">
+                        <input type="date" name="date-leave" id="date-leave" placeholder="MM/DD/YYYY">
                     </div>
 
-                    <img class="search-block__search__search-dates__icon" src="images/Planner.png" alt="calendar">
+                    <div class="search-block__search__search-dates__icon">
+                        <img src="images/Planner.png" alt="calendar">
+                    </div>
 
                     <div class="search-block__search__search-dates__return">
                         <label for="date-return">Return <img src="images/Airplane_Mode_On.png" alt="plane"></label>
@@ -79,7 +84,7 @@
                 </div>
 
                 <button class="search-button">
-                    <img src="images/search_icon.png" alt="search">
+                    <img src="images/search_icon.svg" alt="search">
                 </button>
             </form>
         </div>
