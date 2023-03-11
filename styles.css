@@ -558,6 +558,27 @@ html {
 
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
     border-radius: 35px;
+
+    /*position: relative;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-us-advertisement__block-with-image__advertisement__one-block h4 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #3E86F5;
+    line-height: 27px;
+    margin: 5px;
+}
+
+.contact-us-advertisement__block-with-image__advertisement__one-block span {
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .contact-us-advertisement__block-with-image__advertisement span {
@@ -610,8 +631,6 @@ html {
 .recommended-destination__buttons {
     display: flex;
     justify-content: center;
-
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 10px;
 }
@@ -621,6 +640,7 @@ html {
     padding: 10px;
     border-radius: 10px;
     color: rgba(0, 0, 0, 0.5);
+    background-color: #E5E5E5;
     border: none;
     font-weight: 600;
     font-size: 18px;
