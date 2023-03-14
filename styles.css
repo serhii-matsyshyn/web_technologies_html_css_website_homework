@@ -105,6 +105,9 @@ html {
 }
 
 .search-block__top-buttons__button {
+    width: 121px;
+    height: 66px;
+
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -311,7 +314,7 @@ html {
 
 .special-upcomming-offer__buttons__button {
     flex: 1;
-    padding: 10px;
+    padding: 13px 20px;
     background-color: #FFFFFF;
     color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -476,7 +479,9 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    /*padding: 50px 0;*/
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .contact-us-advertisement__block-with-image {
@@ -619,11 +624,14 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .recommended-destination h2 {
     font-weight: 600;
     font-size: 48px;
+    margin: 20px;
 }
 
 .recommended-destination__buttons {
@@ -631,11 +639,12 @@ html {
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
+    margin: 20px;
 }
 
 .recommended-destination__buttons__button {
     flex: 1;
-    padding: 10px;
+    padding: 13px 20px;
     border-radius: 10px;
     color: rgba(0, 0, 0, 0.5);
     background-color: #E5E5E5;
@@ -743,7 +752,6 @@ html {
 /* Reviews */
 
 .reviews {
-    background-color: #f2f2f2;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
