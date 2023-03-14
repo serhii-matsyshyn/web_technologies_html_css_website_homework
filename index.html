@@ -34,7 +34,7 @@
         <!-- Searching for a flight block -->
         <div class="search-block">
             <div class="search-block__top-buttons">
-                <button class="search-block__top-buttons__button">
+                <button class="search-block__top-buttons__button search-block__button-selected">
                     <img src="images/Airplane_Mode_On.png" alt="logo">
                     <p>Flight</p>
                 </button>
@@ -70,7 +70,7 @@
                 <div class="search-block__search__search-dates">
                     <div class="search-block__search__search-dates__leave">
                         <label for="date-leave">Leave <img src="images/Airplane_Mode_On.png" alt="plane"></label>
-                        <input type="date" name="date-leave" id="date-leave" placeholder="MM/DD/YYYY">
+                        <input type="date" name="date-leave" id="date-leave" value="2023-06-01">
                     </div>
 
                     <div class="search-block__search__search-dates__icon">
@@ -79,7 +79,7 @@
 
                     <div class="search-block__search__search-dates__return">
                         <label for="date-return">Return <img src="images/Airplane_Mode_On.png" alt="plane"></label>
-                        <input type="date" name="date-return" id="date-return">
+                        <input type="date" name="date-return" id="date-return" value="2023-07-01">
                     </div>
                 </div>
 
@@ -94,22 +94,22 @@
         <h2>Special Upcomming Offer</h2>
 
         <div class="special-upcomming-offer__buttons">
-            <button class="special-upcomming-offer__buttons__selected">Team</button>
-            <button class="special-upcomming-offer__buttons__ordinary">Couple</button>
-            <button class="special-upcomming-offer__buttons__ordinary">Family</button>
+            <button class="special-upcomming-offer__buttons__button special-upcomming-offer__selected-button">Team</button>
+            <button class="special-upcomming-offer__buttons__button">Couple</button>
+            <button class="special-upcomming-offer__buttons__button">Family</button>
         </div>
 
         <article class="special-upcomming-offer__offers">
             <!-- Offer 1 -->
             <div class="special-upcomming-offer__offers__offer">
                 <div class="offer__banner">
-                    <img src="images/offers/unsplash_7uXn7nudorc.png" alt="Loga Sea">
+                    <img src="images/offers/unsplash_7uXn7nudorc.jpg" alt="Loga Sea">
                     <time>14 FEB 2022</time>
                 </div>
                 <div class="offer__description">
                     <div class="offer__description__top">
                         <span class="span-relax">Relax</span>
-                        <span>3 Days, 3 Nights</span>
+                        <span class="offer__description__top__duration">3 Days, 3 Nights</span>
                     </div>
                     <h3 class="offer__description__central">Loga Sea</h3>
                     <div class="offer__description__bottom">
@@ -128,7 +128,7 @@
                 <div class="offer__description">
                     <div class="offer__description__top">
                         <span class="span-adventure">Adventure</span>
-                        <span>4 Days, 3 Nights</span>
+                        <span class="offer__description__top__duration">4 Days, 3 Nights</span>
                     </div>
                     <h3 class="offer__description__central">Ansgar Scheffold</h3>
                     <div class="offer__description__bottom">
@@ -147,7 +147,7 @@
                 <div class="offer__description">
                     <div class="offer__description__top">
                         <span class="span-relax">Relax</span>
-                        <span>7 Days, 6 Nights</span>
+                        <span class="offer__description__top__duration">7 Days, 6 Nights</span>
                     </div>
                     <h3 class="offer__description__central">Lona X</h3>
                     <div class="offer__description__bottom">
@@ -200,9 +200,9 @@
         <h2>Recommended Destination</h2>
 
         <div class="recommended-destination__buttons">
-            <button class="recommended-destination__buttons__selected">Popular</button>
-            <button class="recommended-destination__buttons__ordinary">Adventure</button>
-            <button class="recommended-destination__buttons__ordinary">Beath</button>
+            <button class="recommended-destination__buttons__button recommended-destination__button-selected">Popular</button>
+            <button class="recommended-destination__buttons__button">Adventure</button>
+            <button class="recommended-destination__buttons__button">Beath</button>
         </div>
 
         <article class="recommended-destination__destination-block">
@@ -305,7 +305,7 @@
                     <p>Our trip to Morocco was truly a once in a lifetime experience and we are so grateful to everyone
                         that
                         made it happen seamlessly. Our travel planner, Jaouad, was incredible.</p>
-                    <a>-Vand D</a>
+                    <a>-Tru Vio</a>
                     <span>Happy Treloo</span>
 
                 </div>

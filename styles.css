@@ -75,7 +75,8 @@ html {
 }
 
 .banner__main-information h1 {
-    font-size: 48px;
+    font-size: 48px; /* Used for browser compatability */
+    font-size: calc(13px + 2.2vw);
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -109,12 +110,16 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background: rgba(62, 134, 245, 0.2);
+    background: #f8f8f8;
     border-radius: 25px;
     border: none;
 
     font-size: 18px;
     align-items: center;
+}
+
+.search-block__button-selected {
+    background: rgba(62, 134, 245, 0.2);
 }
 
 .search-block__search {
@@ -126,11 +131,13 @@ html {
     gap: 20px;
 
     background-color: #f8f8f8;
-    padding: 20px;
+    padding: 40px 35px;
     border-radius: 0px 50px 50px 50px;
 }
 
 .search-block__search__search-locations {
+    box-sizing: border-box;
+    min-height: 110px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -181,6 +188,9 @@ html {
 }
 
 .search-block__search__search-dates {
+    box-sizing: border-box;
+    min-height: 110px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -258,13 +268,15 @@ html {
 }
 
 .search-button {
-    padding: 20px;
+    width: 110px;
+    height: 110px;
+
     background: rgba(62, 134, 245, 0.8);
     color: #fff;
     border: none;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 65px;
+    border-radius: 45px;
     font-size: 0;
 }
 
@@ -297,28 +309,21 @@ html {
     padding: 10px;
 }
 
-.special-upcomming-offer__buttons__selected {
-    flex: 1;
-    padding: 10px;
-    color: #FFFFFF;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 0 5px;
-    background: #3E86F5;
-    border-radius: 10px;
-}
-
-.special-upcomming-offer__buttons__ordinary {
+.special-upcomming-offer__buttons__button {
     flex: 1;
     padding: 10px;
     background-color: #FFFFFF;
     color: rgba(0, 0, 0, 0.5);
     border: none;
-    border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
     margin: 0 5px;
+    border-radius: 10px;
+}
+
+.special-upcomming-offer__selected-button {
+    color: #FFFFFF;
+    background: #3E86F5;
 }
 
 .special-upcomming-offer__offers {
@@ -352,7 +357,9 @@ html {
 }
 
 .offer__banner img {
+    max-height: 285px;
     width: 100%;
+    aspect-ratio : 1 / 1;
     object-fit: cover;
     border-radius: 50px;
     margin: 5px;
@@ -400,20 +407,19 @@ html {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.offer__description__top span {
+.offer__description__top__duration {
     margin: 5px;
     font-size: 14px;
     padding: 3px;
 }
-
 
 .span-relax {
     background: #FCDDEC;
     border-radius: 100px;
     color: #F178B6;
     font-size: 14px;
-    padding: 3px;
-    margin: 5px;
+    padding: 2px 15px;
+    margin: 5px 5px 5px 0;
 }
 
 .span-adventure {
@@ -421,8 +427,8 @@ html {
     border-radius: 100px;
     color: #7879F1;
     font-size: 14px;
-    padding: 3px;
-    margin: 5px;
+    padding: 3px 15px;
+    margin: 5px 5px 5px 0;
 }
 
 .offer__description__top span {
@@ -515,7 +521,7 @@ html {
     justify-content: center;
     align-items: center;
 
-    gap: 120px;
+    gap: 110px;
 
     position: absolute;
 
@@ -543,7 +549,7 @@ html {
 .contact-us-advertisement__block-with-image__advertisement__one-block {
 
     width: 174px;
-    height: 120px;
+    height: 110px;
 
     text-align: center;
     background: #FFFFFF;
@@ -627,7 +633,7 @@ html {
     padding: 10px;
 }
 
-.recommended-destination__buttons__ordinary {
+.recommended-destination__buttons__button {
     flex: 1;
     padding: 10px;
     border-radius: 10px;
@@ -640,17 +646,9 @@ html {
     margin: 0 5px;
 }
 
-.recommended-destination__buttons__selected {
-    flex: 1;
-    padding: 10px;
-    background: #FFFFFF;
-    border-radius: 10px;
+.recommended-destination__button-selected {
+    background-color: #FFFFFF;
     color: #3E86F5;
-    border: none;
-    font-weight: 600;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 0 5px;
 }
 
 .recommended-destination__destination-block {
@@ -775,7 +773,7 @@ html {
 .reviews__reviews-box__review {
     background-color: #fff;
     border-radius: 50px;
-    padding: 30px 30px 65px 30px;
+    padding: 55px 30px 70px 30px;
     max-width: 400px;
     min-width: 250px;
     text-align: center;
@@ -794,7 +792,6 @@ html {
 
 .reviews__reviews-box__review a {
     font-size: 20px;
-    font-weight: bold;
     display: block;
     margin-top: 20px;
 
@@ -817,10 +814,10 @@ html {
 }
 
 .user-logo {
-    top: -50px;
+    top: -58px;
     position: relative;
 
-    width: 180px;
+    width: 170px;
 
     background: #FFFFFF;
     border-radius: 50%;
@@ -839,6 +836,7 @@ html {
     object-fit: cover;
     margin-bottom: 0;
     margin-top: auto;
+    border-radius: 50%;
 }
 
 .user-logo__rating {
@@ -857,8 +855,8 @@ html {
 }
 
 .user-logo__rating img {
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     margin-right: 5px;
 }
 
@@ -896,7 +894,7 @@ html {
 
 .register-discount-banner img {
     display: block;
-    border-radius: 20px;
+    border-radius: 50px;
     width: 70%;
     margin: 0 auto;
 }
@@ -938,8 +936,8 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 0;
     gap: 20px;
+    padding: 50px;
 }
 
 .footer__copyright {
@@ -963,6 +961,35 @@ html {
     font-size: 24px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1100px) {
+    .contact-us-advertisement__block-with-text {
+        width: 80%;
+        min-width: 400px;
+    }
+
+    .contact-us-advertisement__block-with-image {
+        width: 60%;
+    }
+
+    .register-discount-banner img {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    body:before {
+        content: "Use mobile version of website instead";
+        font-size: 24px;
+        margin-bottom: 50px;
+        display: block;
+        text-align: center;
+    }
+
+    body * {
+        display: none;
+    }
 }
 
 /*!* DEBUG *!*/
